@@ -3,7 +3,6 @@ from main import config # import module ye main file sy import kia
 
 import requests
 
-
 @function_tool # Decorator lga kar function ko tool bna dia or upper es ko import bhi kia hai
 def get_weather(city: str): # ye function bnaya hai
     response = requests.get(f"https://wttr.in/{city}?format=3")
@@ -18,12 +17,12 @@ agent = Agent(
     tools = [get_weather] # ye upper sy aya hai or yaha function ka name likha hai 
 )
 
-result = Runner.run_sync(agent,
-                        'What is the current weather in Karachi today?',
-                        run_config=config
+result = Runner.run_sync(
+    agent,
+    'What is the current weather in Karachi today?',
+    run_config=config
 )
 
-# Print the translated result
 print(result.final_output)
 
 # uv run weatherapikey.py

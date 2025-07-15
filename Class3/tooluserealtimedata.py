@@ -11,12 +11,12 @@ agent = Agent(
     tools = [usd_to_pkr] # ye upper sy aya hai or yaha function ka name likha hai 
 )
 
-result = Runner.run_sync(agent,
-                        'What is USD to PKR today?',
-                        run_config=config
+result = Runner.run_sync(
+    agent,
+    'What is USD to PKR today?',
+    run_config=config
 )
 
-# Print the translated result
 print(result.final_output)
 
 # uv run toolrealtimedata.py
