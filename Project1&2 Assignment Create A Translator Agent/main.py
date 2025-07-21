@@ -1,6 +1,4 @@
-# ASSIGNMENT
-
-#uv venv OR .venv\Scripts\active OR uv init .   run this command line 
+#uv venv OR .venv\Scripts\active OR uv init .   run this all command line 
 #.env                                           create this file and generate api key
 #uv add python-dotenv                           run this command line 
 #uv add openai-agents                           run this command line 
