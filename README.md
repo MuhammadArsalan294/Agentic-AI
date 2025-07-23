@@ -1,1 +1,1 @@
-# Agebtic-AI
+# Agentic-AI
